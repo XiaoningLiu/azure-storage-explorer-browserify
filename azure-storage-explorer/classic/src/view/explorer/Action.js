@@ -1,15 +1,15 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('AzureStorageExplorer.view.main.List', {
+Ext.define('AzureStorageExplorer.view.explorer.Action', {
     extend: 'Ext.grid.Panel',
-    xtype: 'mainlist',
+    xtype: 'exploreraction',
 
     requires: [
         'AzureStorageExplorer.store.Personnel'
     ],
 
-    title: 'Personnel',
+    title: 'Action',
 
     store: {
         type: 'personnel'

@@ -9,6 +9,7 @@ Ext.application({
     extend: 'AzureStorageExplorer.Application',
 
     requires: [
+        'AzureStorageExplorer.config.Runtime',
         'AzureStorageExplorer.view.main.Main'
     ],
 
