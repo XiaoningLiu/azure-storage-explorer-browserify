@@ -26,6 +26,8 @@ Ext.define('AzureStorageExplorer.view.explorer.Main', {
         region : 'south',
         collapsible: true,
         xtype: 'exploreraction',
-        height: 200
+        height: 200,
+        minHeight: 75,
+        maxHeight: 300,
     }]
 });

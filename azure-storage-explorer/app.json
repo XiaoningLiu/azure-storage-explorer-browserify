@@ -217,6 +217,27 @@
         {
             "path": "app.js",
             "bundle": true
+        },
+        {
+            "path": "resources/azure-storage.common.export.js"
+        },
+        {
+            "path": "resources/azure-storage.blob.export.js"
+        },
+        {
+            "path": "resources/azure-storage.queue.export.js"
+        },
+        {
+            "path": "resources/azure-storage.file.export.js"
+        },
+        {
+            "path": "resources/azure-storage.table.export.js"
+        },
+        {
+            "path": "resources/stream.export.bundle.js"
+        },
+        {
+            "path": "resources/FileStreamer.js"
         }
     ],
 

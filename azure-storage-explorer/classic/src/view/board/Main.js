@@ -26,6 +26,8 @@ Ext.define('AzureStorageExplorer.view.board.Main', {
         region : 'south',
         collapsible: true,
         xtype: 'boardconsole',
-        height: 200
+        height: 200,
+        minHeight: 75,
+        maxHeight: 300,
     }]
 });

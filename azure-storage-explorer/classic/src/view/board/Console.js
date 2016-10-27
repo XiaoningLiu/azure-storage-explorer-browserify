@@ -9,7 +9,7 @@ Ext.define('AzureStorageExplorer.view.board.Console', {
         'AzureStorageExplorer.store.Personnel'
     ],
 
-    title: 'Console',
+    title: 'Console (Under development)',
 
     html: 'Activity Logs...'
 });

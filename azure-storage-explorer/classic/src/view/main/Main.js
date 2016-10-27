@@ -23,6 +23,7 @@ Ext.define('AzureStorageExplorer.view.main.Main', {
     viewModel: 'main',
     border: false,
     header: {
+        // height: 40,
         layout: {
             align: 'stretchmax'
         },
@@ -33,15 +34,21 @@ Ext.define('AzureStorageExplorer.view.main.Main', {
             flex: 0
         }
     },
-
     layout: {
         type: 'border',
-        padding: 8
+        padding: 0,
+        align: 'stretch'
     },
-
+    defaults: {
+        collapsible: true,
+        split: true,
+        bodyPadding: 0
+    },
     items: [{
         region : 'west',
         collapsible: true,
+        minWidth: 200,
+        maxWidth: 400,
         width: 300,
         xtype: 'explorermain'
     },{

@@ -7,48 +7,46 @@ Ext.define('AzureStorageExplorer.store.explorer.Directory', {
     root: {
         expanded: true,
         text: 'Azure Storage Accounts',
-        type: 'account-root',
+        type: 'root',
+        children: [{
+            text: 'Account - lxntest',
+            type: 'account',
+            account: 'lxntest',
+            leaf: false,
             children: [{
-                text: 'Account - lxntest',
-                type: 'account',                
-                leaf: false,
+                text: 'Blob Containers',
+                type: 'blob-entry',
+                account: 'lxntest',
                 children: [{
-                    text: 'Blob Containers',
-                    type: 'blob-entry',
-                    children: [{
-                        text: 'mycontainer',
-                        type: 'container',
-                        leaf: true
-                    }, {
-                        text: 'mycontainer2',
-                        type: 'container',
-                        leaf: true
-                    }],    
-                    leaf: false
+                    account: 'lxntest',
+                    text: 'mycontainer',
+                    type: 'container',
+                    leaf: true
                 }, {
-                    text: 'File Shares',
-                    type: 'file-entry',                
-                    isLayover: true,
-                    leaf: false
-                }, {
-                    text: 'Queues',
-                    type: 'queue-entry',              
-                    leaf: false
-                }, {
-                    text: 'Tables',
-                    type: 'table-entry',              
-                    leaf: false
-                }]
-            }, {
-                text: 'Account - dmportal',
-                type: 'account',                
-                isLayover: true,
+                    account: 'lxntest',
+                    text: 'mycontainer2',
+                    type: 'container',
+                    leaf: true
+                }],    
                 leaf: false
             }, {
-                text: 'Account - yatrt',
-                type: 'account',                
+                text: 'File Shares',
+                type: 'file-entry',                
+                account: 'lxntest',
+                isLayover: false,
+                leaf: false
+            }, {
+                text: 'Queues',
+                account: 'lxntest',
+                type: 'queue-entry',              
+                leaf: false
+            }, {
+                text: 'Tables',
+                account: 'lxntest',
+                type: 'table-entry',              
                 leaf: false
             }]
+        }]
     }
             
 });

@@ -9,16 +9,15 @@ Ext.define('AzureStorageExplorer.view.explorer.Action', {
         'AzureStorageExplorer.store.Personnel'
     ],
 
-    title: 'Action',
+    title: 'Action (Under development)',
 
     store: {
         type: 'personnel'
     },
 
     columns: [
-        { text: 'Name',  dataIndex: 'name' },
-        { text: 'Email', dataIndex: 'email', flex: 1 },
-        { text: 'Phone', dataIndex: 'phone', flex: 1 }
+        { text: 'Properties',  dataIndex: 'name',  align: 'left'},
+        { text: 'Values', dataIndex: 'email', flex: 1, align: 'left'},
     ],
 
     listeners: {
